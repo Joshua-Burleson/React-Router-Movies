@@ -32,7 +32,7 @@ const MovieList = props => {
 function MovieDetails({ movie }) {
   const { title, director, metascore, stars } = movie;
   return (
-    <Link to = {`/movies/${movie.id}`} activeStyle = {{color: "red", textDecoration: "underline"}}>
+    <Link to = {`/movies/${movie.id}`} >
       <MovieCard title = {title} director = {director} metascore = {metascore} stars = {stars} />
     </Link>
   );
